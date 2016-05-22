@@ -1,0 +1,72 @@
+
+		       
+            @font-face{font-family:'Hanna';src:url('../media/hanna.ttf');}
+		        *{
+			          font-family: 'Hanna', serif;
+			           
+			          font-size: 15px;
+			     }
+
+		body{
+			background-color:#D1FFFF;
+      background-image: url("http://cfile23.uf.tistory.com/image/186A9F4A4D487C8C293404");
+      background-size:100%;
+
+			
+
+		}
+
+    table{
+      cellpadding:100px;
+    }
+
+
+
+		hgroup{
+		color:#3366FF;	
+		text-align: center;}
+
+		.photo
+        {
+          background-color:#D1FFFF;
+          display:block;  
+          float:left;
+          text-align: center;
+          color:#3366FF;
+        }
+
+        a:link, a:visited 
+        {
+            color:#0000FF;
+        }
+
+        a:hover 
+        {
+              color:#FF0000;
+
+        }
+
+        a:active 
+        {
+              color:#666666;
+        }
+
+        .center{
+        	margin-left: auto;
+    		margin-right: auto;
+    		background-color: #b0e0e6;
+        }
+        .botton{
+        	background-color: #b0e0e6;
+        	color: #666666;
+        	width:100px;
+        	height:30px;
+        }
+        body > section > p {
+          color:#FFFFFF;
+        }
+
+        body > footer > p{
+          color:#FFFFFF;
+        }
+

@@ -1,0 +1,41 @@
+/*  */
+table {
+	border-spacing: 1px;
+	border-collapse: collapse;
+}
+td {
+	border: solid 1px #808080;
+	padding: 5px;
+}
+.w1 { width: 100px; }
+.w2 { width: 200px; }
+.w3 { width: 300px; }
+.w4 { width: 400px; }
+.wf { width: 100%; }
+.h4 { height: 400px; }
+.hf { height: 100%; }
+.th {
+	font-weight: bold;
+	background-color: #F0FFFF;
+}
+.th_submit {
+	font-weight: bold;
+	background-color: #F0FFFF;	
+}
+.ta_c {
+	text-align: center;
+}
+.ta_l {
+	text-align: left;
+}
+.ta_r {
+	text-align: right;
+}
+.submit {
+	width: 120px;
+	height: 40px;
+	font-size: 20px;
+}
+a {
+	text-decoration: none;
+}

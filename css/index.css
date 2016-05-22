@@ -1,0 +1,274 @@
+
+          
+        @font-face{font-family:'Hanna';src:url("../media/hanna.ttf");}
+
+          *{
+            font-family: 'Hanna', serif;
+             
+            font-size: 15px;
+          }
+
+          hgroup
+          {
+            color:#33ADFF; 
+          }
+
+          body
+          {
+            
+            background-image: url("../image/bgimage.png");
+            background-size:1400px 6000px;
+            background-color:#FF8585;
+            margin:100px;
+            
+          }
+
+           body > header 
+          {
+            width: 100%;
+            height: 200px;
+            overflow: visible;
+            background-color: #99FFCC;
+            background-image: url("http://cfile24.uf.tistory.com/image/201C0E334E2690B7252174");
+            background-size: 1100px 199px;
+            display: block;
+
+          }
+
+          body > nav
+          {
+
+            background-color: #FFCCFF;
+            display: block;
+            overflow: hidden;
+            font-size: 22px;
+            line-height:5%;
+          }
+
+          nav > ul,ol
+          {
+            text-align: center;
+          }
+
+          nav > ul > li {
+              top: 20%; 
+              left: 10%; 
+              margin: 5px;
+              list-style: none; 
+              text-align:left;
+              display: inline;
+            }
+
+            nav > ol > li {
+              top: 20%; 
+              left: 10%; 
+              margin: 5px;
+              list-style: none; 
+              text-align:left;
+              display: inline;
+            }
+
+           body > section
+          {
+            overflow:hidden;
+            height:100%;
+            display:block;
+            background-color:#D1FFFF;
+          }
+
+          
+     
+
+          body > section > p
+          {
+            margin: 100px;
+          }
+
+          body > div.top
+          {
+            width:50px;
+            height:30px;
+            background-color: #FF8585;
+
+            position:fixed;
+            right:0px;
+            bottom:0px;
+            text-align: center;
+            opacity:0.5;
+          }
+
+          body > div.Back
+
+          {
+            width:65px;
+            height:30px;
+            background-color: #FFFF66;
+          
+            position:fixed;
+            right:188px;
+            bottom:0px;
+
+            opacity:0.5;
+            text-align: center;
+          }
+
+          body > div.Forward
+          {
+            width:65px;
+            height:30px;
+            background-color: #FFFF66;
+          
+
+            position:fixed;
+            right:52px;
+            bottom:0px;
+
+            opacity:0.5;
+            text-align: center;
+          }
+
+          body > div.Home
+          {
+            width:65px;
+            height:30px;
+            background-color: #66FFFF;
+
+            position:fixed;
+            right:120px;
+            bottom:0px;
+
+            opacity:0.5;
+            text-align: center;
+          }
+
+
+          body > footer
+          {
+            width:100%;
+            height:100px;
+            background-color:#CCFFCC;
+            display: block;     
+            overflow: hidden;
+          }
+
+          a 
+          {
+            text-decoration: none;
+          }
+
+          a:link, a:visited 
+          {
+              color:#6699FF;
+          }
+
+          a:hover 
+          {
+            color:#FF0000;
+          }
+
+          a:active 
+          {
+                color:#666666;
+          }
+          body > section > article
+          {
+            background-image: url("http://cfile238.uf.daum.net/image/1651070F4BF21C5B94A86E");
+            background-size: 100%;
+          }
+
+          body > section > section> article
+          {
+            background-image: url("http://cfile4.uf.tistory.com/original/2544DB3354124A17221807");
+              background-size: 1100px 700px;
+            
+          }
+
+          footer{
+            background-image: url("http://cfile5.uf.tistory.com/original/133534374F2D364C092772");
+            background-size: 1000px 300px 
+          }
+
+          #month{
+            background-image: url(" http://cfile3.uf.tistory.com/image/272EE94452A2CE7F060A65");
+
+            background-size: 100% 1200px;
+            color:#FFFFFF;
+          }
+
+          #today{
+             background-image: url("http://cfile238.uf.daum.net/image/1651070F4BF21C5B94A86E");
+             background-size: 100% 1200px;
+             color:#99CCFF;
+          }
+          #category{
+            background-image: url("http://cfile22.uf.tistory.com/image/18374A214A200D631285FA");
+             background-size: 100% 1200px;
+          }
+          #center
+          {
+            text-align: center;
+          }
+
+          #marginright10
+          {
+            margin-right: 10px
+          } 
+          .menubox
+          { 
+            border: 0px; /*margin 없애면 메뉴 ㅇㅋ*/
+            height:80px;
+          }
+
+          tr.submenuitemh
+          {
+          	height:6px;
+          }
+
+          td.menu, td.menu:link, td.menu:visited{
+            color:#33CCFF
+          }
+          td.menu:hover, td.menu:active{
+            color:#000099;
+          }
+          a{
+            text-decoration :none;
+          }
+          td.submenuitem a, td.submenuitem a:link, td.submenuitem a:visited
+          {
+            font-size:15px;
+            color:#33CCCC;
+          }
+          td.submenuitem a:hover, td.submenuitem a:active{
+            color:#ff0000;
+          }
+          td.textarea
+          {
+            width:100%;
+          }
+          .submenu{
+            color:#6699FF;
+            position:absolute;
+            visibility: hidden;
+            height:150px;
+           /* border:2px solid; */
+          }
+          #submenu1{  /*테두리 margin줄이고 절대위치 잘 맞추면*/
+            top:352px; /* 잘 맞추거나 테두리 없애거나 */
+            left:210px;
+          }
+          #submenu2{
+            top:347px;
+            left:285px;
+          }
+          #submenu3{
+            top:350px;
+            left:381px;
+          }
+          #submenu4{
+            top:347px;
+            left:500px;
+          }
+          #submenu5{ 
+            top:345px;
+            left:595px;
+          }

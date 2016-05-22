@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>12121518 유호균</title>
+        <meta charset="utf-8">
+        <link type="text/css" href="..\css\write.css" rel="stylesheet"/>
+        <script type="text/javascript" src="..\js\write.js"></script>
+
+        
+                  </head>
+
+                   <h1 align="center" class="title">
+                    Write Articles
+                     </h1>
+        <hr align="left" style="width:387px;margin-right:auto;margin-left:auto">
+                    <body>
+                   
+                      <form action="..\jsp\jsp_writeArticle.jsp" method="get">
+                        <table >
+                          <tr>
+                            <td>제목</td>
+                            <td><input type="text" name="a_Article" id="inputTitle" style="width:97%" required placeholder="게시글의 제목을 입력해 주세요"></td>
+                          </tr>
+                          <tr>
+                            <td>날짜</td>
+                            <td><input type="datetime-local" name="a_Eat_Time" id="inputDate" style="width:97%"> </td>
+                          </tr>
+                          <tr>
+                          <td>위치</td>
+                          <td> <input type="text" name="a_Eat_Place" id="inputLocation" style="width:97%" placeholder="어디서 먹은 음식인지 입력해 주세요" ></td>
+                          </tr>
+                          <tr>
+                          <td>언제 </td>
+                          <td><select size="1" id="inputWhen" name="a_Meal_Time" required style="width: 97%;border:outset;background-color:#E8F7F7" size="35" > 
+                          <option>선택해주세요</option> <option>아침</option> <option>점심</option> <option>저녁</option> <option>간식</option>    
+                          </select></td>
+                          </tr>
+                          <tr>
+                            <td>음식분류</td>
+                            <td><select size="1" id="inputClassified" name="a_Food_Class" required style="width: 97%;border:outset;background-color:#E8F7F7" size="35" > 
+                            <option>선택해주세요</option> <option>밥</option> <option>면</option> <option>고기</option> <option>채소</option> <option>기타</option>    
+                            </select></td>
+                          </tr>
+                          <tr>
+                            <td>사진</td>
+                            <td><input type="file" name="foodpicture" accept="image/*"></td>
+                          </tr>
+                          <tr>
+                          <td>내용</td>
+                          <td> <textarea rows="10" id="inputContent" name="a_content" cols="50" name="comment" style="background-color:#E8F7F7" placeholder="내용을 입력해 주세요"></textarea></td>
+                          </tr>
+                          <tr>
+                          <td></td>
+                          <td><input type="submit" value="Send" onclick="printData();" style="width: 49%;background-color:#80C6FC">
+                          <input type="reset" value="Reset" style="width: 49%;background-color:#80C6FC"></td>
+                          </tr>  
+                         </table>
+
+                       </form>
+                       <table id="printOutTable" stype="margin-left:auto; margin-right:auto; visibility:hidden;">
+                       <tr>
+                       <td>
+                        <div id="outputTitle"> </div>
+                       <div id="outputDate"> </div>
+                       <div id="outputLocation"> </div>
+                       <div id="outputWhen"></div>
+                       <div id="outputClassification"> </div>
+                       <div id="outputContent"> </div>
+                       <td>
+                       </tr>
+                       </table>
+
+                       
+
+
+
+          <footer>
+              <p align="right" >Copyright 2015~now by Yoohogyun. All Rights Reserved.</p>
+              <p align="right" >- last updated 15.3.27</p>
+          </footer>
+                            
+                   </body>
+
+                   
+
+                   
+  </html>
+
+

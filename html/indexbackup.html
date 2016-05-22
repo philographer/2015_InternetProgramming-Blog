@@ -1,0 +1,240 @@
+  <!doctype html> <!--수정사항 : 그림에 마우스올리면 글자색 바뀌게  -->
+  <html>
+      <head>
+        <title> 12121518 유호균  </title>
+          <meta charset="utf-8">
+          <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/hanna.css">
+           <link rel="stylesheet" type="text/css" href="..\css\index.css"  />
+           <script type="text/javascript" src="..\js\index.js"></script>
+      </head>
+
+      	<body name="top" onload="myNoticeFunc()">
+          
+      		<header>
+      			<hgroup>
+      				<h1 id="center" style="font-size:80px"> What did I eat yesterday...?</h1>
+              <p id="center" style="font-size:40px">(FoodDiary)</p>
+      			</hgroup>
+     			 </header>
+
+           <nav id="month" style="height:50px">
+            <table class="menubox" id="center" style="margin-left: auto; margin-right: auto;" >
+                <tr>
+                  <td class="menu" onmouseover="showSubMenu(1)" onmouseout="hideSubMenu()" style="font-size:20px">
+                    Month &nbsp;&nbsp;&nbsp;&nbsp;
+                  </td>
+                  <td class="menu" onmouseover="showSubMenu(2)" onmouseout="hideSubMenu()" style="font-size:20px">
+                    Meal &nbsp;&nbsp;&nbsp;&nbsp;
+                  </td>
+                  <td class="menu" onmouseover="showSubMenu(3)" onmouseout="hideSubMenu()" style="font-size:20px">
+                    Classification &nbsp;&nbsp;&nbsp;&nbsp;
+                  </td>   
+                  <td class="menu" onmouseover="showSubMenu(4)" onmouseout="hideSubMenu()" style="font-size:20px">
+                    All &nbsp;&nbsp;&nbsp;&nbsp;
+                  </td>
+                  <td class="menu" style="font-size:20px">
+                     <a href="write.html" target="_blank">Write</a> &nbsp;&nbsp;&nbsp;&nbsp;
+                  </td>
+                  <td class="menu" style="font-size:20px">
+                    <a href="..\jsp\jsp_board.jsp" target="_blank">Board</a> &nbsp;&nbsp;&nbsp;&nbsp;
+                  </td>
+                  <td class="menu" style="font-size:20px">
+                    <a href="login.html" target="_blank">Login</a> &nbsp;&nbsp;&nbsp;&nbsp;
+                  </td>
+                  <td class="menu" style="font-size:20px">
+                    <a href="account.html" target="_blank">Join</a> &nbsp;&nbsp;&nbsp;&nbsp;
+                  </td>
+                </tr>
+              </table>
+<!--
+  <div id="submenu1" class="submenu" onmouseover="showSubMenu(1)" onmouseout="hideSubMenu()">
+  <table class="menubox">
+    <tr><td class="submenuitem"><a href="#">2014</a></td></tr>
+    <tr><td class="submenuitem"><a href="#">2015</a></td></tr>
+  </table>
+  </div>
+  -->
+
+  <div id="submenu1" class="submenu" onmouseover="showSubMenu(1)"  onmouseout="hideSubMenu()">
+  <table class="menubox">
+    <tr class="submenuitemh"><td class="submenuitem"><a href="1405.html" target="content">14.5</a></td></tr>
+    <tr class="submenuitemh"><td class="submenuitem"> </td></tr>
+     <tr class="submenuitemh"><td class="submenuitem"><a href="1406.html" target="content">14.6</a></td></tr>
+     <tr class="submenuitemh"><td class="submenuitem"> </td></tr>
+      <tr class="submenuitemh"><td class="submenuitem"><a href="1407.html" target="content">14.7</a></td></tr>
+      <tr class="submenuitemh"><td class="submenuitem"> </td></tr>
+       <tr class="submenuitemh"><td class="submenuitem"><a href="1408.html" target="content">14.8</a></td></tr>
+       <tr class="submenuitemh"><td class="submenuitem"> </td></tr>
+        <tr class="submenuitemh"><td class="submenuitem"><a href="1409.html" target="content">14.9</a></td></tr>
+         <tr class="submenuitemh"><td class="submenuitem"> </td></tr>
+         <tr class="submenuitemh"><td class="submenuitem"><a href="1410.html" target="content">14.10</a></td></tr>
+          <tr class="submenuitemh"><td class="submenuitem"> </td></tr>
+          <tr class="submenuitemh"><td class="submenuitem"><a href="1411.html" target="content">14.11</a></td></tr>
+           <tr class="submenuitemh"><td class="submenuitem"> </td></tr>
+           <tr class="submenuitemh"><td class="submenuitem"><a href="1412.html" target="content">14.12</a></td></tr>
+           <tr class="submenuitemh"><td class="submenuitem"> </td></tr>
+           <tr class="submenuitemh"><td class="submenuitem"><a href="1501.html" target="content">15.1</a></td></tr>
+           <tr class="submenuitemh"><td class="submenuitem"> </td></tr>
+           <tr class="submenuitemh"><td class="submenuitem"><a href="1502.html" target="content">15.2</a></td></tr>
+           <tr class="submenuitemh"><td class="submenuitem"> </td></tr>
+           <tr class="submenuitemh"><td class="submenuitem"><a href="1503.html" target="content">15.3</a></td></tr>
+           <tr class="submenuitemh"><td class="submenuitem"> </td></tr>
+           <tr class="submenuitemh"><td class="submenuitem"><a href="1504.html" target="content">15.4</a></td></tr>
+           <tr class="submenuitemh"><td class="submenuitem"> </td></tr>
+  </table>
+  </div>
+
+  <div id="submenu6" class="submenu" onmouseover="showSubMenu(4)">
+  <table class="menubox">
+    <tr><td class="submenuitem"><a href="1501.html" target="content"></a></td></tr>
+     <tr><td class="submenuitem"><a href="1502.html" target="content"></a></td></tr>
+      <tr><td class="submenuitem"><a href="1503.html" target="content"></a></td></tr>
+       <tr><td class="submenuitem"><a href="1504.html" target="content"></a></td></tr>
+  </table>
+  </div>
+
+
+<div id="submenu2" class="submenu"onmouseover="showSubMenu(2)" onmouseout="hideSubMenu()">
+<table class="menubox"> 
+    <tr><td class="submenuitem"><a href="snack.html" target="content">Snack</a></td></tr>
+    <tr><td class="submenuitem"><a href="breakfast.html" target="content">breakfast</a></td></tr>
+    <tr><td class="submenuitem"><a href="lunch.html" target="content">Lunch</a></td></tr>
+    <tr><td class="submenuitem"><a href="dinner.html" target="content">Dinner</a></td></tr>
+  </table>
+</div>
+<div id="submenu3" class="submenu" onmouseover="showSubMenu(3)" onmouseout="hideSubMenu()">
+<table class="menubox">
+    <tr><td class="submenuitem"><a href="rice.html" target="content">Rice</a></td></tr>
+    <tr><td class="submenuitem"><a href="nuddle.html" target="content">Nuddle</a></td></tr>
+    <tr><td class="submenuitem"><a href="drink.html" target="content">Drink</a></td></tr>
+    <tr><td class="submenuitem"><a href="vegetable.html" target="content">Vegetable</a></td></tr>
+    <tr><td class="submenuitem"><a href="etc.html" target="content">ETC</a></td></tr>
+  </table>
+</div>
+<div id="submenu4" class="submenu" onmouseover="showSubMenu(4)" onmouseout="hideSubMenu()">
+<table class="menubox">
+    <tr><td class="submenuitem"><a href="all.html" target="content">All</a></td></tr>
+    <tr><td class="submenuitem"><a href="#"></a></td></tr>
+    <tr><td class="submenuitem"><a href="#"></a></td></tr>
+  </table>
+</div>
+
+           <!--
+            <ul>
+              <li> <a href="1405.html" target="content" style="color:#3366FF"> 14년 5월 </a> </li>
+              <li> <a href="1406.html" target="content" style="color:#3366FF"> 14년 6월 </a> </li>
+              <li> <a href="1407.html" target="content" style="color:#3366FF"> 14년 7월 </a> </li>
+              <li> <a href="1408.html" target="content" style="color:#3366FF"> 14년 8월 </a> </li>
+              <li> <a href="1409.html" target="content" style="color:#3366FF"> 14년 9월 </a> </li>
+              <li> <a href="1410.html" target="content" style="color:#3366FF"> 14년 10월 </a> </li>
+              <li> <a href="1411.html" target="content" style="color:#3366FF"> 14년 11월 </a> </li>
+              <li> <a href="1412.html" target="content" style="color:#3366FF"> 14년 12월 </a> </li>
+              <li> <a href="1501.html" target="content" style="color:#3366FF"> 15년 1월 </a> </li>
+              <li> <a href="1502.html" target="content" style="color:#3366FF"> 15년 2월 </a> </li>
+              <li> <a href="1503.html" target="content" style="color:#3366FF"> 15년 3월 </a> </li>
+              <li> <a href="1504.html" target="content" style="color:#3366FF"> 15년 4월 </a> </li>
+              </ul>
+              <-->
+          </nav>
+
+  		   <!-- <nav id="month">
+      			<ul>
+      				<li> <a href="1405.html" target="content" style="color:#3366FF"> 14년 5월 </a> </li>
+      				<li> <a href="1406.html" target="content" style="color:#3366FF"> 14년 6월 </a> </li>
+              <li> <a href="1407.html" target="content" style="color:#3366FF"> 14년 7월 </a> </li>
+              <li> <a href="1408.html" target="content" style="color:#3366FF"> 14년 8월 </a> </li>
+              <li> <a href="1409.html" target="content" style="color:#3366FF"> 14년 9월 </a> </li>
+              <li> <a href="1410.html" target="content" style="color:#3366FF"> 14년 10월 </a> </li>
+              <li> <a href="1411.html" target="content" style="color:#3366FF"> 14년 11월 </a> </li>
+              <li> <a href="1412.html" target="content" style="color:#3366FF"> 14년 12월 </a> </li>
+              <li> <a href="1501.html" target="content" style="color:#3366FF"> 15년 1월 </a> </li>
+              <li> <a href="1502.html" target="content" style="color:#3366FF"> 15년 2월 </a> </li>
+              <li> <a href="1503.html" target="content" style="color:#3366FF"> 15년 3월 </a> </li>
+              <li> <a href="1504.html" target="content" style="color:#3366FF"> 15년 4월 </a> </li>
+     					</ul>
+     			</nav>
+  					<nav id="today">
+  						<ul>
+                <p>하루</p>
+                <li><a href="breakfast.html" target="content">아침</a></li>
+                <li><a href="lunch.html" target="content">점심</a></li>
+                <li><a href="dinner.html" target="content" >저녁</a></li>
+                <li><a href="snack.html" target="content">간식</a></li>
+              </ul>
+     				</nav>
+     				<nav id="category">
+            <ol>
+                <p style="color:#99CCFF">분류</p>
+                  <li><a href="rice.html" target="content">밥</a></li>
+                  <li><a href="nuddle.html" target="content">면</a></li>
+                  <li><a href="meat.html" target="content">고기</a></li>
+                  <li><a href="vegetable.html" target="content">채소</a></li>
+                  <li><a href="drink.html" target="content">음료</a></li>
+                  <li><a href="etc.html" target="content">기타</a></li>
+              </ol>
+     				</nav>
+            -->
+            <section>
+
+            <section>
+          <article>
+          <!--
+          <a target="content" href="article1.html" class="center">게시글1.html</a><br>
+          -->
+          <iframe id="main_content" name="content" src="" align="center" height="700px"width="1063px" src=""
+          onload="autoResize(this)"   frameborder="0"> 
+          </iframe>
+
+          </article>  
+            
+          </section>
+          </section>
+         
+          <section>
+
+
+          <article id="center">
+          
+          이번주의 베스트음식
+          <a href="http://postfiles6.naver.net/20150319_21/yoohoogun114_1426691371913pBKoo_JPEG/image.jpg?type=w3" target="_blank">
+                  <p>3/16일 저녁 서울 어딘가에서</p>
+                  <img border="0" src="http://postfiles6.naver.net/20150319_21/yoohoogun114_1426691371913pBKoo_JPEG/image.jpg?type=w3" alt="한정식"
+                  width="300" height="200">
+                  <figcaption>(한정식)</figcaption>
+                  </a>
+
+        
+          </article>
+          </section>
+     			<footer>
+                <p align="right" id="marginright10">맛은 설명할 수 없을 때 더욱 맛있다.-이어령-</p>
+     						<p align="right" id="marginright10">Copyright 1999-2015 by Yoohogyun. All Rights Reserved.</p>
+     						<p align="right" id="marginright10">- last updated 15.3.28</p>
+     			</footer>
+     
+          <div class="Back">
+          <a href="javascript:ToBack();"> Back </a>
+          </div>
+
+          <div class="Home">
+          <a href="javascript:ToHome();"> Home </a>
+          </div>
+
+          <div class="Forward">
+          <a href="javascript:ToForward();"> Forward </a>
+          </div>
+
+          <div class="top">
+              <a href="#top">Click to Top
+              </a>
+          </div>
+
+          <div>
+          		<audio  autoplay loop>
+						<source src="..\media\onara.mp3" type="audio/mp3" >
+						너의 브라우져는 mp3를 지원을 안 하는구나 
+					</audio> 
+          </div>
+
+     		</body>
+     	</html>

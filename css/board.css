@@ -1,0 +1,110 @@
+
+             
+           @font-face{font-family:'Nanum Pen Script';src:url('../media/nanum.ttf');}
+
+              .title
+              {
+                color:#3083FF;
+              }
+              body
+              {
+                font-family: 'Nanum Pen Script', serif;
+                font-size:20px;
+                color:#000000;
+                text-align: center;
+                background-image: url("http://www.matcl.com/files/2013/07/02/6ef1616ba2702b12db193f52b1835358140350.png");
+                background-size:1400px 2000px;
+                background-color:#FF8585;
+            margin:100px;
+              }
+              .nowpage
+              {
+                 font-family: 'Nanum Pen Script', serif;
+                color:#FF0066;
+              }
+
+              a
+              {
+                 font-family: 'Nanum Pen Script', serif;
+                 color:#FF3399;
+              }
+               table
+                  {
+                    width:500px;
+                    margin-left:auto;
+                    margin-right:auto;
+                  }
+                  /*
+               td{
+                
+                }
+                */
+
+                textarea {  
+                width:97%;
+                height:200px;
+                padding: 3px;
+                border: none;
+                
+                }
+                th{
+                  width:100px;
+                  color:#dc143c;
+                }
+
+                td{
+                color:#2f4f4f;
+                width:300px;
+                font-family: 'Nanum Pen Script', serif;
+                font-size:20px;
+                }
+
+                tr{
+                background-color:#CCFFFF;
+                font-family: 'Nanum Pen Script', serif;
+               }
+             
+
+              select
+              {
+                font-family: 'Nanum Pen Script', serif;
+              }
+              
+              input{ 
+                text-align:center; 
+                color:#2f4f4f;
+                font-family: 'Nanum Pen Script', serif;
+                background-color:#E8F7F7;
+                border:outset;
+                   }
+
+                input.text{
+                  width:95%;
+                }
+                input.password{
+                  width:95%;
+                }
+
+               #nessesary{
+                background-color:#FFE0FF;
+               }
+
+
+          a.page:hover{
+          color:#6666FF;
+          }
+          a.name:hover
+          {
+           color:#3366FF;
+          }
+
+          a:visited
+          {
+            font-size:15px;
+            /*color:#33CCCC;*/
+          }
+
+           a{
+            text-decoration :none;
+          }
+              
